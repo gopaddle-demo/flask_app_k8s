@@ -1,9 +1,9 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: app
+  name: app-1
   labels:
-    app: app
+    app: app-1
 spec:
   replicas: 1
   strategy:
@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        app: app
+        app: app-1
     spec:
       containers:
       - name: gunicorn-1
