@@ -17,7 +17,7 @@ spec:
         app: app
     spec:
       containers:
-      - name: gunicorn
+      - name: gunicorn-1
         image: vincentdesmet/flask_app:1.0
         volumeMounts:
         - name: images
